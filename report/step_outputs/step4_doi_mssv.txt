@@ -1,0 +1,24 @@
+### Thử MSSV khác: 2A202602631
+  {"dataset_version": "c8936824962d", "frames": 1019, "by_split": {"train": 705, "val": 157, "test": 157}, "trips_by_split": {"train": 18, "test": 4, "val": 4}}
+drive_a   train  327         9     43.0         
+drive_a   val    66          2     29.0         
+drive_a   test   43          2     34.0         
+drive_b   train  378         9     64.0         
+drive_b   val    91          2     90.0         
+drive_b   test   114         2     77.0         
+MSSV dùng để chia split: 2A202602631
+CẦN THẤY: mỗi drive có đủ train, val, test; một trip chỉ nằm trong MỘT split; dataset_version là chuỗi 12 ký tự (đổi MSSV thì đổi version).
+  PASS  one dataset_version, manifest.json agrees with the table              version c8936824962d
+
+### Đặt lại MSSV của mình: 2A202602630
+  {"dataset_version": "28d3f601b324", "frames": 1019, "by_split": {"train": 736, "val": 155, "test": 128}, "trips_by_split": {"test": 4, "train": 18, "val": 4}}
+drive_a   train  315         9     40.0         
+drive_a   val    66          2     29.0         
+drive_a   test   55          2     50.0         
+drive_b   train  421         9     71.0         
+drive_b   val    89          2     91.0         
+drive_b   test   73          2     43.0         
+MSSV dùng để chia split: 2A202602630
+CẦN THẤY: mỗi drive có đủ train, val, test; một trip chỉ nằm trong MỘT split; dataset_version là chuỗi 12 ký tự (đổi MSSV thì đổi version).
+  PASS  one dataset_version, manifest.json agrees with the table              version 28d3f601b324
+7/7 checks passed

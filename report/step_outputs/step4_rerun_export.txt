@@ -1,0 +1,2 @@
+$ lab.sh cli export-dataset (chạy lại lần 2)
+{"dataset_version": "28d3f601b324", "frames": 1019, "by_split": {"train": 736, "val": 155, "test": 128}, "trips_by_split": {"val": 4, "train": 18, "test": 4}, "manifest_sha256": "3b06489d577f4fab2c68f0da49180ce9764748ce8d0fa25f4df22c8d61a82c92"}
