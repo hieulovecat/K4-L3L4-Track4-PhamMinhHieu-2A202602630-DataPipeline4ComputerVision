@@ -9,7 +9,6 @@
 | GitHub | `hieulovecat` |
 | Trip dùng cho bài tập sập và chạy lại (xem GUIDE, bước 5) | `trip-07774` |
 
-> Ghi chú về trip: MSSV có chữ (`2A...`) nên `int(MSSV)` trong GUIDE không chạy được. Tôi lấy **toàn bộ chữ số** của MSSV: `2202602630 % 26 = 20` → phần tử thứ 20 của `cli list-trips` là `trip-07774` (cũng là `map_index=20` của `silver_frames`).
 
 ## Kết quả cuối
 
