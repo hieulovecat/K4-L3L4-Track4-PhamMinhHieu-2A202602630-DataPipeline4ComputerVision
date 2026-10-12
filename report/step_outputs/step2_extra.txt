@@ -1,0 +1,25 @@
+$ lab.sh dbt test --select silver_telemetry
+12:36:22  1 of 6 PASS accepted_values_silver_telemetry_drive_id__drive_a__drive_b ........ [PASS in 0.08s]
+12:36:22  2 of 6 PASS in_range_silver_telemetry_speed_mps__70__0 ......................... [PASS in 0.03s]
+12:36:22  3 of 6 WARN 2 max_gap_ms_silver_telemetry_ts__1000__drive_id ................... [WARN 2 in 0.04s]
+12:36:22  4 of 6 PASS not_null_silver_telemetry_speed_mps ................................ [PASS in 0.03s]
+12:36:22  5 of 6 PASS not_null_silver_telemetry_ts ....................................... [PASS in 0.02s]
+12:36:22  6 of 6 PASS unique_combination_silver_telemetry_drive_id__ts ................... [PASS in 0.03s]
+12:36:22  [WARNING]: in test max_gap_ms_silver_telemetry_ts__1000__drive_id (models/schema.yml)
+12:36:22  [WARNING]: Got 2 results, configured to warn if != 0
+12:36:22  Done. PASS=6 WARN=1 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=7
+
+$ rejects mẫu
+drive_id  ts                                speed_mps  reject_reason     
+--------  --------------------------------  ---------  ------------------
+drive_a   2025-10-07 08:00:39.916000+00:00  250.0      speed_out_of_range
+drive_a   2025-10-07 08:02:48.789000+00:00  250.0      speed_out_of_range
+drive_a   2025-10-07 08:04:08.212000+00:00  250.0      speed_out_of_range
+drive_b   2025-10-08 14:30:39.913000+00:00  250.0      speed_out_of_range
+drive_b   2025-10-08 14:32:48.719000+00:00  250.0      speed_out_of_range
+drive_b   2025-10-08 14:34:08.398000+00:00  250.0      speed_out_of_range
+$ khoảng mất tín hiệu > 1s
+drive_id  so_khoang_hon_1s  gap_lon_nhat_ms
+--------  ----------------  ---------------
+drive_a   1                 3073           
+drive_b   1                 3124           
