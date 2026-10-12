@@ -1,0 +1,38 @@
+dag_id                execution_date             task_id            state            start_date                        end_date                          map_index
+day09_video_pipeline  2026-10-12T12:56:06+00:00  dbt_run_silver     upstream_failed  2026-10-12T12:57:48.839971+00:00  2026-10-12T12:57:48.839971+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  dbt_test_silver    upstream_failed  2026-10-12T12:57:48.867839+00:00  2026-10-12T12:57:48.867839+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  dbt_run_gold       upstream_failed  2026-10-12T12:57:48.938404+00:00  2026-10-12T12:57:48.938404+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  dbt_test_gold      upstream_failed  2026-10-12T12:57:49.574504+00:00  2026-10-12T12:57:49.574504+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  publish_lake       upstream_failed  2026-10-12T12:57:50.653907+00:00  2026-10-12T12:57:50.653907+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  export_dataset     upstream_failed  2026-10-12T12:57:51.749905+00:00  2026-10-12T12:57:51.749905+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  publish_warehouse  upstream_failed  2026-10-12T12:57:52.219070+00:00  2026-10-12T12:57:52.219070+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  bronze_drive_b     success          2026-10-12T12:56:07.175017+00:00  2026-10-12T12:56:10.753083+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  bronze_drive_a     success          2026-10-12T12:56:07.174965+00:00  2026-10-12T12:56:10.709203+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  bronze_trips       success          2026-10-12T12:56:12.734449+00:00  2026-10-12T12:56:14.743565+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  trip_commands      success          2026-10-12T12:56:15.336558+00:00  2026-10-12T12:56:17.062900+00:00
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:08.455486+00:00  2026-10-12T12:57:11.719587+00:00  11
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:12.414207+00:00  2026-10-12T12:57:15.810103+00:00  12
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:16.480932+00:00  2026-10-12T12:57:20.380308+00:00  13
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:21.633490+00:00  2026-10-12T12:57:25.231883+00:00  14
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:26.598841+00:00  2026-10-12T12:57:29.314456+00:00  15
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:17.798740+00:00  2026-10-12T12:56:21.116887+00:00  0
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:30.802961+00:00  2026-10-12T12:57:34.643853+00:00  16
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:39.833307+00:00  2026-10-12T12:57:42.550277+00:00  18
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:36.732155+00:00  2026-10-12T12:56:39.571258+00:00  4
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:22.480480+00:00  2026-10-12T12:56:26.114354+00:00  1
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:35.868123+00:00  2026-10-12T12:57:39.315306+00:00  17
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:26.620722+00:00  2026-10-12T12:56:30.864972+00:00  2
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:31.768940+00:00  2026-10-12T12:56:35.438759+00:00  3
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:49.217550+00:00  2026-10-12T12:57:52.088053+00:00  21
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:43.129305+00:00  2026-10-12T12:57:45.914272+00:00  19
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:49.929975+00:00  2026-10-12T12:56:53.129435+00:00  7
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:40.713601+00:00  2026-10-12T12:56:44.447583+00:00  5
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      failed           2026-10-12T12:57:47.003676+00:00  2026-10-12T12:57:48.714327+00:00  20
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:45.910962+00:00  2026-10-12T12:56:49.148261+00:00  6
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:53.957074+00:00  2026-10-12T12:56:57.670430+00:00  8
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:53.203062+00:00  2026-10-12T12:57:56.594023+00:00  22
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:56:59.071600+00:00  2026-10-12T12:57:02.226530+00:00  9
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:03.441411+00:00  2026-10-12T12:57:07.365283+00:00  10
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:57:57.097773+00:00  2026-10-12T12:58:00.148982+00:00  23
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:58:01.054684+00:00  2026-10-12T12:58:03.703634+00:00  24
+day09_video_pipeline  2026-10-12T12:56:06+00:00  silver_frames      success          2026-10-12T12:58:04.972503+00:00  2026-10-12T12:58:08.064358+00:00  25

@@ -1,0 +1,25 @@
+### Trước khi clear: silver.frames
+so_dong  so_trip  dong_trip_cua_toi
+-------  -------  -----------------
+1212     25       0                
+
+### airflow tasks clear -t ^silver_frames$ --only-failed --downstream
+[2026-10-12T12:59:26.853+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags
+
+### Sau khi clear: trạng thái task
+     37 success
+### Số lần thử (try) của silver_frames map_index=20
+attempt=1.log
+attempt=2.log
+### Task có hơn 1 lần thử (= được chạy lại)
+./task_id=silver_frames/map_index=20/attempt=2.log
+
+### Sau khi xanh: silver.frames
+so_dong  so_trip  dong_trip_cua_toi  dong_trung
+-------  -------  -----------------  ----------
+1246     26       34                 0         
+### verify
+  PASS  one dataset_version, manifest.json agrees with the table                 version 28d3f601b324
+  PASS  manifest lists upstream table versions (lineage)                         
+  PASS  every manifest image exists under the dataset version folder             
+27/27 checks passed
